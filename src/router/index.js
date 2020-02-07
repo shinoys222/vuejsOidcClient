@@ -10,7 +10,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/vue',
       name: 'Home',
       component: Home,
       meta: {
@@ -18,7 +18,7 @@ export default new Router({
       }
     },
     {
-      path: '/admin',
+      path: '/vue/admin',
       name: 'admin',
       component: PayingUser,
       meta: {
@@ -27,7 +27,7 @@ export default new Router({
       }
     },
     {
-      path: '/user',
+      path: '/vue/user',
       name: 'user',
       component: FreeUser,
       meta: {
@@ -36,7 +36,7 @@ export default new Router({
       }
     },
     {
-      path: '/accessdenied',
+      path: '/vue/accessdenied',
       name: 'AccessDenied',
       component: AccessDenied,
       meta: {
