@@ -18,21 +18,21 @@ export default new Router({
       }
     },
     {
-      path: '/payinguser',
-      name: 'PayingUser',
+      path: '/admin',
+      name: 'admin',
       component: PayingUser,
       meta: {
         requiresAuth: true,
-        role: ['PayingUser']
+        role: ['x-admin']
       }
     },
     {
-      path: '/freeuser',
-      name: 'FreeUser',
+      path: '/user',
+      name: 'user',
       component: FreeUser,
       meta: {
         requiresAuth: true,
-        role: ['FreeUser']
+        role: ['x-user']
       }
     },
     {
