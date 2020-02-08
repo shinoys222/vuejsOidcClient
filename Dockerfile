@@ -16,7 +16,7 @@ RUN npm install
 COPY . .
 
 # build app for production with minification
-RUN npm run dev
+RUN npm run prod
 
 
 EXPOSE 8080

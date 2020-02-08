@@ -8,9 +8,10 @@ import AccessDenied from '../pages/AccessDenied'
 Vue.use(Router)
 
 export default new Router({
+  base: '/vue/',
   routes: [
     {
-      path: '/vue/',
+      path: '/',
       name: 'Home',
       component: Home,
       meta: {
@@ -18,7 +19,7 @@ export default new Router({
       }
     },
     {
-      path: '/vue/admin',
+      path: '/admin',
       name: 'admin',
       component: PayingUser,
       meta: {
@@ -27,7 +28,7 @@ export default new Router({
       }
     },
     {
-      path: '/vue/user',
+      path: '/user',
       name: 'user',
       component: FreeUser,
       meta: {
@@ -36,7 +37,7 @@ export default new Router({
       }
     },
     {
-      path: '/vue/accessdenied',
+      path: '/accessdenied',
       name: 'AccessDenied',
       component: AccessDenied,
       meta: {
