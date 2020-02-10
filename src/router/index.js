@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 import Home from '../pages/Home'
 import PayingUser from '../pages/PayingUser'
 import FreeUser from '../pages/FreeUser'
 import AccessDenied from '../pages/AccessDenied'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+export default new VueRouter({
   base: '/vue/',
   routes: [
     {
